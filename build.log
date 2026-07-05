@@ -1,0 +1,123 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:downloadAssets
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugKotlin
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:735:9 Variable 'isTermsAccepted' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:736:9 Variable 'isEcosystemPolicyAccepted' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:738:9 Variable 'isDeveloper' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:760:9 Variable 'showAccountDialog' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:875:67 'List: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.List
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:1028:69 'ArrowForward: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowForward
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:1394:39 Parameter 'comment' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:1405:66 Parameter 'success' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:1674:82 Parameter 'index' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:1769:77 Parameter 'index' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:2281:5 Parameter 'accentGreen' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:2419:29 'CircularProgressIndicator(Float, Modifier = ..., Color = ..., Dp = ..., Color = ..., StrokeCap = ...): Unit' is deprecated. Use the overload that takes `progress` as a lambda
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:2477:25 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:2705:21 'LinearProgressIndicator(Float, Modifier = ..., Color = ..., Color = ..., StrokeCap = ...): Unit' is deprecated. Use the overload that takes `progress` as a lambda
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:2773:71 Parameter 'index' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:2849:29 'LinearProgressIndicator(Float, Modifier = ..., Color = ..., Color = ..., StrokeCap = ...): Unit' is deprecated. Use the overload that takes `progress` as a lambda
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:2896:80 Parameter 'index' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:3024:5 Parameter 'onThemeToggle' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:3027:5 Parameter 'onShowAppDetails' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:3031:5 Parameter 'cardBgColor' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:3032:5 Parameter 'cardBorderColor' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:3147:21 Variable 'devName' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:3298:41 Parameter 'success' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:3347:48 'ExitToApp: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ExitToApp
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:3665:92 'List: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.List
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:3795:61 'ArrowForward: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowForward
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:4148:73 'ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:4297:45 Variable 'isPending' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:4635:56 'Send: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Send
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:4742:33 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:4808:33 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:4915:33 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:4985:33 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:5053:44 'ExitToApp: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ExitToApp
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:5551:65 'ArrowForward: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowForward
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:5558:29 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:5578:69 'List: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.List
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:5620:69 'ArrowForward: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowForward
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:5860:17 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:5975:61 'List: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.List
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6013:17 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6477:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6514:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6609:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6646:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6748:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6786:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6824:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6909:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:6991:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:7020:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:7121:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:7177:21 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:7282:69 'ArrowForward: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowForward
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:7326:9 Variable 'termsAgreements' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:7379:9 Variable 'isDarkMode' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:7386:9 Variable 'expandedSubmissions' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:7387:9 Variable 'submissionChecks' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:7388:9 Variable 'screenshotDialogUrl' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:8452:157 Parameter 'success' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:8517:150 Parameter 'success' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:9100:5 Parameter 'isDarkMode' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:9162:44 'ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:9199:33 'CircularProgressIndicator(Float, Modifier = ..., Color = ..., Dp = ..., Color = ..., StrokeCap = ...): Unit' is deprecated. Use the overload that takes `progress` as a lambda
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:9564:33 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:9693:29 'LinearProgressIndicator(Float, Modifier = ..., Color = ..., Color = ..., StrokeCap = ...): Unit' is deprecated. Use the overload that takes `progress` as a lambda
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:9956:5 Parameter 'isInstalled' is never used
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:10201:57 'ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:10652:68 'List: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.List
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:11109:61 'ArrowForward: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowForward
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:11623:57 'ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:11651:57 'ArrowForward: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowForward
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:12201:53 'ArrowForward: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowForward
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:12222:17 'Divider(Modifier = ..., Dp = ..., Color = ...): Unit' is deprecated. Renamed to HorizontalDivider
+w: file:///app/applet/app/src/main/java/com/example/MainActivity.kt:12275:21 'LinearProgressIndicator(Float, Modifier = ..., Color = ..., Color = ..., StrokeCap = ...): Unit' is deprecated. Use the overload that takes `progress` as a lambda
+w: file:///app/applet/app/src/main/java/com/example/data/FirebaseAuthService.kt:328:36 Unnecessary non-null assertion (!!) on a non-null receiver of type UserEntity
+w: file:///app/applet/app/src/main/java/com/example/data/FirebaseAuthService.kt:335:29 Unnecessary non-null assertion (!!) on a non-null receiver of type UserEntity
+w: file:///app/applet/app/src/main/java/com/example/data/FirebaseAuthService.kt:899:54 Unchecked cast: Any? to List<Map<*, *>>
+w: file:///app/applet/app/src/main/java/com/example/data/FirebaseAuthService.kt:962:40 Parameter 'id' is never used
+w: file:///app/applet/app/src/main/java/com/example/data/FirebaseService.kt:920:69 Unchecked cast: Map<*, *>? to Map<String, Any>
+w: file:///app/applet/app/src/main/java/com/example/data/FirebaseService.kt:921:65 Unchecked cast: Any? to Map<String, Map<String, Any>>
+w: file:///app/applet/app/src/main/java/com/example/utils/CustomDownloadManager.kt:414:13 Variable 'activeCall' is assigned but never accessed
+w: file:///app/applet/app/src/main/java/com/example/utils/CustomDownloadManager.kt:426:17 The value 'call' assigned to 'var activeCall: Call? defined in com.example.utils.CustomDownloadManager.downloadSelfUpdate.`<anonymous>`' is never used
+w: file:///app/applet/app/src/main/java/com/example/utils/CustomDownloadManager.kt:476:17 The value 'directCall' assigned to 'var activeCall: Call? defined in com.example.utils.CustomDownloadManager.downloadSelfUpdate.`<anonymous>`' is never used
+w: file:///app/applet/app/src/main/java/com/example/view/AuthScreen.kt:35:47 'GoogleSignIn' is deprecated. Deprecated in Java
+w: file:///app/applet/app/src/main/java/com/example/view/AuthScreen.kt:46:9 Variable 'computedSha1' is never used
+w: file:///app/applet/app/src/main/java/com/example/view/AuthScreen.kt:231:61 'ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack
+w: file:///app/applet/app/src/main/java/com/example/view/AuthScreen.kt:415:90 Parameter 'success' is never used, could be renamed to _
+w: file:///app/applet/app/src/main/java/com/example/view/TermsAgreementDialog.kt:215:21 'LinearProgressIndicator(Float, Modifier = ..., Color = ..., Color = ..., StrokeCap = ...): Unit' is deprecated. Use the overload that takes `progress` as a lambda
+w: file:///app/applet/app/src/main/java/com/example/viewmodel/StoreViewModel.kt:606:13 Variable 'context' is never used
+
+[Incubating] Problems report is available at: file:///app/applet/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 49s
+17 actionable tasks: 3 executed, 14 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html

@@ -1,0 +1,68 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Security Rules for Apps Catalog
+    match /apps/{appId} {
+      // Allow read access to anyone so they can explore categories and download packages
+      allow read: if true;
+
+      // Allow creation if the developer is logged in, designates their own email as submitter,
+      // and sets isApproved to false (unless they are the administrator)
+      allow create: if request.auth != null 
+                    && request.resource.data.submittedBy == request.auth.token.email
+                    && request.resource.data.isApproved == (request.auth.token.email == "davidstha900@gmail.com");
+
+      // Admin (davidstha900@gmail.com) can update or delete any document.
+      // Registered developers can update or delete their own app but they CANNOT self-approve theirs.
+      allow update, delete: if request.auth != null 
+                            && (
+                              request.auth.token.email == "davidstha900@gmail.com" 
+                              || (
+                                resource.data.submittedBy == request.auth.token.email 
+                                && request.resource.data.isApproved == resource.data.isApproved
+                              )
+                            );
+    }
+
+    // Security Rules for Users Profile
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && (request.auth.uid == userId || request.auth.token.email == "davidstha900@gmail.com");
+    }
+
+    // Security Rules for Submission Reviews
+    match /submissions/{submissionId} {
+      // Users can view submissions. Admin can read all.
+      allow read: if request.auth != null;
+                  
+      // Any authenticated user can submit a new review draft with 'Pending' status.
+      allow create: if request.auth != null 
+                    && request.resource.data.submittedBy == request.auth.token.email
+                    && request.resource.data.status == "Pending";
+                    
+      // Updates are restricted to Admin (changing status or fixing details)
+      // or owner if update doesn't modify approval status
+      allow update, delete: if request.auth != null 
+                            && (
+                              request.auth.token.email == "davidstha900@gmail.com"
+                              || (
+                                resource.data.submittedBy == request.auth.token.email
+                                && request.resource.data.status == resource.data.status
+                              )
+                            );
+    }
+
+    // Security Rules for Notices & Announcements
+    match /notices/{noticeId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.email == "davidstha900@gmail.com";
+    }
+
+    // Security Rules for App Configurations (e.g. self-updates)
+    match /configs/{configId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.email == "davidstha900@gmail.com";
+    }
+  }
+}

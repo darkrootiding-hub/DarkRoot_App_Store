@@ -1,0 +1,6 @@
+{
+  "name": "DarkRoot Store",
+  "description": "A custom Android app marketplace that allows users to browse applications, view screenshots, read descriptions, download APK files from direct links, and install them.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

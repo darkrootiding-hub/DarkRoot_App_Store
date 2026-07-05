@@ -1,0 +1,24 @@
+{
+  "project_info": {
+    "project_number": "123456789012",
+    "firebase_url": "https://placeholder-default-rtdb.firebaseio.com",
+    "project_id": "placeholder-project-id",
+    "storage_bucket": "placeholder-project-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123456789012:android:0123456789abcdef",
+        "android_client_info": {
+          "package_name": "com.placeholder.package"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyPlaceholderPlaceholderPlaceholder"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}

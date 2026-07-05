@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Elegant Shield Outer Frame -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M54,26 C67,26 79,22 83,28 C83,52 72,74 54,83 C36,74 25,52 25,28 C29,22 41,26 54,26 Z" />
+
+    <!-- Shopping Bag Handle -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M48,46 C48,40 60,40 60,46" />
+
+    <!-- Shopping Bag Body -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M44.5,46 L43,64 C43,66.5 44.5,67.5 46.5,67.5 H61.5 C63.5,67.5 65,66.5 65,64 L63.5,46 H44.5 Z" />
+
+    <!-- Dynamic micro cubes inside bag representing store data / root nodes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M51,51 h5 v5 h-5 z M51,59 h5 v5 h-5 z M59,51 h5 v5 h-5 z" />
+
+</vector>

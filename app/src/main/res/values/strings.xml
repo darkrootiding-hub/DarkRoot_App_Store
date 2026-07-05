@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DarkRoot Store</string>
+    <string name="device_admin_description">Enables secure app uninstallation features in DarkRoot Store.</string>
+</resources>

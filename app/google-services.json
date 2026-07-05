@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "210511589455",
+    "firebase_url": "https://dark-store-6836d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dark-store-6836d",
+    "storage_bucket": "dark-store-6836d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210511589455:android:21fd17e6dfed0b3f713a3a",
+        "android_client_info": {
+          "package_name": "com.darkstore.darkroot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210511589455-90vu807op09vmokh1g9niflgid076dfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWAQ3MmbZwzIQ9zNZvN9lep-_W6dIbv9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210511589455-90vu807op09vmokh1g9niflgid076dfd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

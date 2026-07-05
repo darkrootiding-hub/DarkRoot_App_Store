@@ -1,0 +1,45 @@
+{
+  "rules": {
+    "apps": {
+      // Allow read access to anyone so they can explore categories and download packages
+      ".read": "true",
+      "$appId": {
+        ".read": "true",
+        // Write access constraints:
+        // 1. If Admin: davidstha900@gmail.com has full write permissions
+        // 2. If Developer submits a NEW app: must be unapproved and signed by their email
+        // 3. If Developer updates their OWN existing app: must not change the isApproved status
+        ".write": "auth != null && (auth.token.email === 'davidstha900@gmail.com' || (!data.exists() && newData.child('submittedBy').val() === auth.token.email && newData.child('isApproved').val() === false) || (data.exists() && data.child('submittedBy').val() === auth.token.email && newData.child('isApproved').val() === data.child('isApproved').val()))"
+      }
+    },
+    "users": {
+      "$userId": {
+        ".read": "auth != null",
+        ".write": "auth != null && (auth.uid === $userId || auth.token.email === 'davidstha900@gmail.com')"
+      }
+    },
+    "submissions": {
+      ".read": "auth != null",
+      "$submissionId": {
+        // Only admin or the submitting developer can see submission details
+        ".read": "auth != null && (auth.token.email === 'davidstha900@gmail.com' || (data.exists() && data.child('submittedBy').val() === auth.token.email))",
+        // Submissions write constraints:
+        // 1. Admin (davidstha900@gmail.com) can update or delete any submission
+        // 2. Fresh submissions can be created if status is 'Pending' and owned by author
+        // 3. Developer can update their own submission details as long as 'status' stays unmodified
+        ".write": "auth != null && (auth.token.email === 'davidstha900@gmail.com' || (!data.exists() && newData.child('submittedBy').val() === auth.token.email && newData.child('status').val() === 'Pending') || (data.exists() && data.child('submittedBy').val() === auth.token.email && newData.child('status').val() === data.child('status').val()))"
+      }
+    },
+    "notices": {
+      ".read": "true",
+      "$noticeId": {
+        ".read": "true",
+        ".write": "auth != null && auth.token.email === 'davidstha900@gmail.com'"
+      }
+    },
+    "DarkStoreUpdate": {
+      ".read": "true",
+      ".write": "auth != null && auth.token.email === 'davidstha900@gmail.com'"
+    }
+  }
+}
